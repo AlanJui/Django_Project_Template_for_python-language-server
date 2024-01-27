@@ -7,8 +7,36 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+django = ">=4.0,<5.0"
 
+[tool.poetry.group.dev.dependencies]
+pydocstyle = "^6.3.0"
+django-stubs = { version = "^4.2.7", extras = ["compatible-mypy"] }
+mypy = ">=1.7.0,<1.8.0"
+ruff-lsp = "^0.0.50"
+python-lsp-ruff = "^2.0.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff-lsp]
+pythonPath = "./.venv/bin/python3.12"
+# python = "python3.12"
+# django = "4.0.0"
+# django-stubs = "4.2.7"
+# mypy = "0.910"
+# pydocstyle = "6.3.0"
+
+[tool.pydocstyle]
+ignore = ["D100", "D103", "D104"]
+match-dir = "*.py"
+
+[tool.mypy]
+mypy_path = "./.venv/lib/python3.12/site-packages"
+exclude = ['.venv', 'venv']
+plugins = ["mypy_django_plugin.main"]
+# ignore_missing_imports = true
+
+[tool.django-stubs]
+django_settings_module = "web_app.settings"
