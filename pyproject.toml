@@ -40,3 +40,6 @@ plugins = ["mypy_django_plugin.main"]
 
 [tool.django-stubs]
 django_settings_module = "web_app.settings"
+
+[tool.djlint]
+ignore = "H014,H015"
