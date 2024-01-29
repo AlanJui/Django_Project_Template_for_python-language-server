@@ -216,17 +216,6 @@ files = [
 ]
 
 [[package]]
-name = "packaging"
-version = "23.2"
-description = "Core utilities for Python packages"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "packaging-23.2-py3-none-any.whl", hash = "sha256:8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7"},
-    {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
-]
-
-[[package]]
 name = "parso"
 version = "0.8.3"
 description = "A Python Parser"
@@ -272,23 +261,6 @@ snowballstemmer = ">=2.2.0"
 
 [package.extras]
 toml = ["tomli (>=1.2.3)"]
-
-[[package]]
-name = "pygls"
-version = "1.2.1"
-description = "A pythonic generic language server (pronounced like 'pie glass')"
-optional = false
-python-versions = ">=3.7.9,<4"
-files = [
-    {file = "pygls-1.2.1-py3-none-any.whl", hash = "sha256:7dcfcf12b6f15beb606afa46de2ed348b65a279c340ef2242a9a35c22eeafe94"},
-    {file = "pygls-1.2.1.tar.gz", hash = "sha256:04f9b9c115b622dcc346fb390289066565343d60245a424eca77cb429b911ed8"},
-]
-
-[package.dependencies]
-lsprotocol = "2023.0.0"
-
-[package.extras]
-ws = ["websockets (>=11.0.3,<12.0.0)"]
 
 [[package]]
 name = "python-lsp-jsonrpc"
@@ -384,27 +356,6 @@ files = [
     {file = "ruff-0.1.14-py3-none-win_arm64.whl", hash = "sha256:269302b31ade4cde6cf6f9dd58ea593773a37ed3f7b97e793c8594b262466b67"},
     {file = "ruff-0.1.14.tar.gz", hash = "sha256:ad3f8088b2dfd884820289a06ab718cde7d38b94972212cc4ba90d5fbc9955f3"},
 ]
-
-[[package]]
-name = "ruff-lsp"
-version = "0.0.50"
-description = "A Language Server Protocol implementation for Ruff."
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "ruff_lsp-0.0.50-py3-none-any.whl", hash = "sha256:b0ae08a63084a37b4c0f85d4f144717ad5b454bc7d605014ab1b64fc5e52b9b2"},
-    {file = "ruff_lsp-0.0.50.tar.gz", hash = "sha256:e16b496c1ba82f29d7e9b9c24add835998f323795a746f507ea8f967346b916b"},
-]
-
-[package.dependencies]
-lsprotocol = ">=2023.0.0"
-packaging = ">=23.1"
-pygls = ">=1.1.0"
-ruff = ">=0.0.274"
-typing-extensions = "*"
-
-[package.extras]
-dev = ["mypy (==1.4.1)", "pip-tools (>=6.13.0,<7.0.0)", "pytest (>=7.3.1,<8.0.0)", "pytest-asyncio (==0.21.1)", "python-lsp-jsonrpc (==1.0.0)"]
 
 [[package]]
 name = "snowballstemmer"
@@ -554,4 +505,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "7957f2a959cb714bdaaec00eeda31ce2b2f5288b5d1938a304ca4e68a671a1e8"
+content-hash = "8a5de2aecb0a7ee884e283f7de2920732c81970740aae0914c7ab66f1cab5ec6"
